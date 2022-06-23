@@ -7,7 +7,9 @@ We had previously helped Steve design a VBA code to provide data for total volum
 ## Results
 
 1. In step 1a) we defined a variable "tickerIndex" which, was used to access correct index across multiple different arrays
+
 ***tickerIndex = 0***
+
 2. In **1b)** We have created three different output arrays
 ***Dim tickerVolumes(11) As Long
     Dim tickerStartingPrices(11) As Single, tickerEndingPrices(11) As Single
