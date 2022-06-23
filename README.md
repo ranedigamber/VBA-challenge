@@ -24,35 +24,57 @@ We had previously helped Steve design a VBA code to provide data for total volum
 ***Next i***
        
 4. **2b)** Creates a loop the goes over all rows of the worksheet
-***For j = 2 To RowCount      
-           ' If the next row’s ticker doesn’t match, increase the tickerIndex.
-           If Cells(j, 1).Value = tickers(tickerIndex) Then
+***For j = 2 To RowCount*** 
+
+***' If the next row’s ticker doesn’t match, increase the tickerIndex.***
+
+***If Cells(j, 1).Value = tickers(tickerIndex) Then***
               
 5. **3a-c)** Sets a conditional inside of the for loop to increase tickerVolume, set tickerStartingPrice and set tickerEndingPrice
-***'3a) Increase volume for current ticker
-              tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
-           End If
-    '3b) Check if the current row is the first row with the selected tickerIndex.
-           If Cells(j - 1, 1).Value <> tickers(tickerIndex) And Cells(j, 1).Value = tickers(tickerIndex) Then
-               tickerStartingPrices = Cells(j, 6).Value
-           End If
-        '3c) check if the current row is the last row with the selected ticker
-           If Cells(j + 1, 1).Value <> tickers(tickerIndex) And Cells(j, 1).Value = tickers(tickerIndex) Then
-               tickerEndingPrices = Cells(j, 6).Value
-           End If
+***'3a) Increase volume for current ticker***
+
+***tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value***
+
+***End If***
+
+***'3b) Check if the current row is the first row with the selected tickerIndex.***
+
+***If Cells(j - 1, 1).Value <> tickers(tickerIndex) And Cells(j, 1).Value = tickers(tickerIndex) Then***
+
+***tickerStartingPrices = Cells(j, 6).Value***
+***End If***
+***'3c) check if the current row is the last row with the selected ticker***
+
+***If Cells(j + 1, 1).Value <> tickers(tickerIndex) And Cells(j, 1).Value = tickers(tickerIndex) Then***
+
+***tickerEndingPrices = Cells(j, 6).Value***
+           
+ ***End If***
+ 
 6. **4)** Creates a loop through the arrays to determine output for Ticker, TotalDailyVolume and Returns
-***'4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
-            For i = 0 To 11
-           Worksheets("All Stocks Analysis").Activate 
-           Cells(4 + i, 1).Value = tickers(i)
-           Cells(4 + i, 2).Value = tickerVolumes(i)
-           Cells(4 + i, 3).Value = (tickerEndingPrices(i) / tickerStartingPrices(i)) - 1 
-           Next i
-            'With Range("C4:C15")
-                        '.NumberFormat = "0.0%"
-                        '.Value = .Value
-            'End With
-   Next i
+***'4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.***
+
+***For i = 0 To 11
+
+***Worksheets("All Stocks Analysis").Activate 
+
+***Cells(4 + i, 1).Value = tickers(i)
+
+***Cells(4 + i, 2).Value = tickerVolumes(i)
+
+***Cells(4 + i, 3).Value = (tickerEndingPrices(i) / tickerStartingPrices(i)) - 1 
+
+***Next i***
+
+***'With Range("C4:C15")***
+
+***'.NumberFormat = "0.0%"***
+
+***'.Value = .Value***
+
+***'End With***
+
+***Next i***
 7. **5)** Create the formating guidelines for the worksheet
 
 8. Here's the output of both the original and the refactored code
