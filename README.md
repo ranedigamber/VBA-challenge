@@ -24,6 +24,7 @@ We had previously helped Steve design a VBA code to provide data for total volum
 ***Next i***
        
 4. **2b)** Creates a loop the goes over all rows of the worksheet
+5. 
 ***For j = 2 To RowCount*** 
 
 ***' If the next row’s ticker doesn’t match, increase the tickerIndex.***
