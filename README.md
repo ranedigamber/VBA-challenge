@@ -17,11 +17,11 @@ We had previously helped Steve design a VBA code to provide data for total volum
     
 3. **2a)** Creates a loop to initialize the tickerVolumes to zero
 
-***For i = 0 To 11
+***For i = 0 To 11***
 
-       ***tickerVolumes(i) = 0***
+***tickerVolumes(i) = 0***
        
-       ***Next i***
+***Next i***
        
 4. **2b)** Creates a loop the goes over all rows of the worksheet
 ***For j = 2 To RowCount      
