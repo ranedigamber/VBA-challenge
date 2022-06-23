@@ -11,8 +11,10 @@ We had previously helped Steve design a VBA code to provide data for total volum
 ***tickerIndex = 0***
 
 2. In **1b)** We have created three different output arrays
+
 ***Dim tickerVolumes(11) As Long
-    Dim tickerStartingPrices(11) As Single, tickerEndingPrices(11) As Single
+    Dim tickerStartingPrices(11) As Single, tickerEndingPrices(11) As Single***
+    
 3. **2a)** Creates a loop to initialize the tickerVolumes to zero
 ***For i = 0 To 11
        tickerVolumes(i) = 0 
