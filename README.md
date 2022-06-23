@@ -2,7 +2,7 @@
 # Overview of the Project
 
 The goal of this project is to help Steve a fresh graduate help his first customers who, also happen to be his parents, research research the stock market data over from 2017-2018 for investment. 
-We had previously helped Steve design a VBA code to provide data for total volume and returns for a green energy entity(DAOQ). Our objective now would be to provide a refactored code to cover the entire stock market over 2 years.
+We had previously helped Steve design a VBA code to provide data for total volume and returns for a green energy entity(DAQO). Our objective now would be to provide a refactored code to cover the entire stock market over 2 years.
 
 ## Results
 
