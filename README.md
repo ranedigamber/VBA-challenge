@@ -28,10 +28,13 @@ This is the comparative performance of the original and the refactored code for 
 
 Original 2017: 1.4843 sec, 
 ![Original_2017](https://user-images.githubusercontent.com/107159218/175424214-5d56694c-df9e-42a8-8e24-b044b87a07d1.JPG)
+
 Refactored 2017: 1.3437 sec
 ![Refactored_2017](https://user-images.githubusercontent.com/107159218/175424228-57796fa6-dc00-4ce4-9dd1-71ed723ef993.JPG)
+
 Original 2018: 1.7187 sec
 ![Original_2018](https://user-images.githubusercontent.com/107159218/175424245-0a4ffc00-7d90-4598-97ff-1f88e2cf7faf.JPG)
+ 
  Refactored 2018: 1.3984 sec 
 ![Refactored_2018](https://user-images.githubusercontent.com/107159218/175424255-ad330050-13ac-4d59-873a-a088da240984.JPG)
 
