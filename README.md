@@ -54,15 +54,15 @@ We had previously helped Steve design a VBA code to provide data for total volum
 6. **4)** Creates a loop through the arrays to determine output for Ticker, TotalDailyVolume and Returns
 ***'4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.***
 
-***For i = 0 To 11
+***For i = 0 To 11***
 
-***Worksheets("All Stocks Analysis").Activate 
+***Worksheets("All Stocks Analysis").Activate*** 
 
-***Cells(4 + i, 1).Value = tickers(i)
+***Cells(4 + i, 1).Value = tickers(i)***
 
-***Cells(4 + i, 2).Value = tickerVolumes(i)
+***Cells(4 + i, 2).Value = tickerVolumes(i)***
 
-***Cells(4 + i, 3).Value = (tickerEndingPrices(i) / tickerStartingPrices(i)) - 1 
+***Cells(4 + i, 3).Value = (tickerEndingPrices(i) / tickerStartingPrices(i)) - 1*** 
 
 ***Next i***
 
@@ -75,8 +75,10 @@ We had previously helped Steve design a VBA code to provide data for total volum
 ***'End With***
 
 ***Next i***
-7. **5)** Create the formating guidelines for the worksheet
 
+7. **5)** Create the formating guidelines for the worksheet
+    Code not shown as it was provide to us
+    
 8. Here's the output of both the original and the refactored code
 
 
