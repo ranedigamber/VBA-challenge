@@ -16,9 +16,11 @@ We had previously helped Steve design a VBA code to provide data for total volum
     Dim tickerStartingPrices(11) As Single, tickerEndingPrices(11) As Single***
     
 3. **2a)** Creates a loop to initialize the tickerVolumes to zero
+
 ***For i = 0 To 11
        tickerVolumes(i) = 0 
        Next i***
+       
 4. **2b)** Creates a loop the goes over all rows of the worksheet
 ***For j = 2 To RowCount      
            ' If the next row’s ticker doesn’t match, increase the tickerIndex.
